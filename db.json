@@ -1,64 +1,116 @@
 {
     "motos": [
-        {
-            "id": 1,
-            "merk": "Harley-Davidson",
-            "land": "Verenigde Staten",
-            "categorie": "Cruiser"
-        },
-        {
-            "id": 2,
-            "merk": "Yamaha",
-            "land": "Japan",
-            "categorie": "Sport"
-        },
-        {
-            "id": 3,
-            "merk": "Honda",
-            "land": "Japan",
-            "categorie": "Street"
-        },
-        {
-            "id": 4,
-            "merk": "BMW",
-            "land": "Duitsland",
-            "categorie": "Touring"
-        },
-        {
-            "id": 5,
-            "merk": "Ducati",
-            "land": "Italië",
-            "categorie": "Sport"
-        },
-        {
-            "id": 6,
-            "merk": "Kawasaki",
-            "land": "Japan",
-            "categorie": "Sport"
-        },
-        {
-            "id": 7,
-            "merk": "Suzuki",
-            "land": "Japan",
-            "categorie": "Street"
-        },
-        {
-            "id": 8,
-            "merk": "KTM",
-            "land": "Oostenrijk",
-            "categorie": "Off-road"
-        },
-        {
-            "id": 9,
-            "merk": "Triumph",
-            "land": "Verenigd Koninkrijk",
-            "categorie": "Cruiser"
-        },
-        {
-            "id": 10,
-            "merk": "Moto Guzzi",
-            "land": "Italië",
-            "categorie": "Touring"
-        }
+      {
+        "id": 1,
+        "merk": "Harley-Davidson",
+        "land": "Verenigde Staten",
+        "categorie": "Cruiser"
+      },
+      {
+        "id": 2,
+        "merk": "Yamaha",
+        "land": "Japan",
+        "categorie": "Sport"
+      },
+      {
+        "id": 3,
+        "merk": "Honda",
+        "land": "Japan",
+        "categorie": "Street"
+      },
+      {
+        "id": 4,
+        "merk": "BMW",
+        "land": "Duitsland",
+        "categorie": "Touring"
+      },
+      {
+        "id": 5,
+        "merk": "Ducati",
+        "land": "Italië",
+        "categorie": "Sport"
+      },
+      {
+        "id": 6,
+        "merk": "Kawasaki",
+        "land": "Japan",
+        "categorie": "Sport"
+      },
+      {
+        "id": 7,
+        "merk": "Suzuki",
+        "land": "Japan",
+        "categorie": "Street"
+      },
+      {
+        "id": 8,
+        "merk": "KTM",
+        "land": "Oostenrijk",
+        "categorie": "Off-road"
+      },
+      {
+        "id": 9,
+        "merk": "Triumph",
+        "land": "Verenigd Koninkrijk",
+        "categorie": "Cruiser"
+      },
+      {
+        "id": 10,
+        "merk": "Moto Guzzi",
+        "land": "Italië",
+        "categorie": "Touring"
+      }
+    ],
+    "brandstoffen": [
+      {
+        "motor_id": 1,
+        "brandstof": "Benzine",
+        "soort": "Euro 95"
+      },
+      {
+        "motor_id": 2,
+        "brandstof": "Benzine",
+        "soort": "Euro 98"
+      },
+      {
+        "motor_id": 3,
+        "brandstof": "Benzine",
+        "soort": "Euro 95"
+      },
+      {
+        "motor_id": 4,
+        "brandstof": "Benzine",
+        "soort": "Euro 98"
+      },
+      {
+        "motor_id": 5,
+        "brandstof": "Benzine",
+        "soort": "Euro 95"
+      },
+      {
+        "motor_id": 6,
+        "brandstof": "Benzine",
+        "soort": "Euro 98"
+      },
+      {
+        "motor_id": 7,
+        "brandstof": "Benzine",
+        "soort": "Euro 95"
+      },
+      {
+        "motor_id": 8,
+        "brandstof": "Benzine",
+        "soort": "Euro 98"
+      },
+      {
+        "motor_id": 9,
+        "brandstof": "Benzine",
+        "soort": "Euro 95"
+      },
+      {
+        "motor_id": 10,
+        "brandstof": "Benzine",
+        "soort": "Euro 98"
+      }
     ]
-}
+  }
