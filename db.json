@@ -1,40 +1,86 @@
 {
-    "sensors": [
+    "motos": [
       {
         "id": 1,
-        "type": "temperature",
-        "unit": "°C",
-        "model": "DHT22",
-        "location": 1,
-        "accuracy": "±0.5°C"
+        "merk": "Harley-Davidson",
+        "land": "Verenigde Staten",
+        "categorie": "Cruiser"
       },
       {
         "id": 2,
-        "type": "humidity",
-        "unit": "%",
-        "model": "DHT22",
-        "location": 1,
-        "accuracy": "±2%"
+        "merk": "Yamaha",
+        "land": "Japan",
+        "categorie": "Sport"
+      },
+      {
+        "id": 3,
+        "merk": "Honda",
+        "land": "Japan",
+        "categorie": "Street"
+      },
+      {
+        "id": 4,
+        "merk": "BMW",
+        "land": "Duitsland",
+        "categorie": "Touring"
+      },
+      {
+        "id": 5,
+        "merk": "Ducati",
+        "land": "Italië",
+        "categorie": "Sport"
+      },
+      {
+        "id": 6,
+        "merk": "Kawasaki",
+        "land": "Japan",
+        "categorie": "Sport"
+      },
+      {
+        "id": 7,
+        "merk": "Suzuki",
+        "land": "Japan",
+        "categorie": "Street"
+      },
+      {
+        "id": 8,
+        "merk": "KTM",
+        "land": "Oostenrijk",
+        "categorie": "Off-road"
+      },
+      {
+        "id": 9,
+        "merk": "Triumph",
+        "land": "Verenigd Koninkrijk",
+        "categorie": "Cruiser"
+      },
+      {
+        "id": 10,
+        "merk": "Moto Guzzi",
+        "land": "Italië",
+        "categorie": "Touring"
       }
     ],
-    "locations": [
+    "categorieën": [
       {
         "id": 1,
-        "name": "Woonkamer",
-        "building": "Hoofdgebouw",
-        "floor": 1,
-        "coordinates": {
-          "lat": 52.370216,
-          "lng": 4.895168
-        }
-      }
-    ],
-    "measurements": [
+        "naam": "Cruiser"
+      },
       {
-        "id": 1,
-        "sensor_id": 1,
-        "value": 21.5,
-        "timestamp": "2025-03-26T10:30:00Z"
+        "id": 2,
+        "naam": "Sport"
+      },
+      {
+        "id": 3,
+        "naam": "Street"
+      },
+      {
+        "id": 4,
+        "naam": "Touring"
+      },
+      {
+        "id": 5,
+        "naam": "Off-road"
       }
     ]
-  }
+  }  
