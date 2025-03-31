@@ -1,87 +1,64 @@
 {
     "motos": [
-      {
-        "id": 1,
-        "merk": "Harley-Davidson",
-        "land": "Verenigde Staten",
-        "categorie_id": 1
-      },
-      {
-        "id": 2,
-        "merk": "Yamaha",
-        "land": "Japan",
-        "categorie_id": 2
-      },
-      {
-        "id": 3,
-        "merk": "Honda",
-        "land": "Japan",
-        "categorie_id": 3
-      },
-      {
-        "id": 4,
-        "merk": "BMW",
-        "land": "Duitsland",
-        "categorie_id": 4
-      },
-      {
-        "id": 5,
-        "merk": "Ducati",
-        "land": "Italië",
-        "categorie_id": 2
-      },
-      {
-        "id": 6,
-        "merk": "Kawasaki",
-        "land": "Japan",
-        "categorie_id": 2
-      },
-      {
-        "id": 7,
-        "merk": "Suzuki",
-        "land": "Japan",
-        "categorie_id": 3
-      },
-      {
-        "id": 8,
-        "merk": "KTM",
-        "land": "Oostenrijk",
-        "categorie_id": 5
-      },
-      {
-        "id": 9,
-        "merk": "Triumph",
-        "land": "Verenigd Koninkrijk",
-        "categorie_id": 1
-      },
-      {
-        "id": 10,
-        "merk": "Moto Guzzi",
-        "land": "Italië",
-        "categorie_id": 4
-      }
-    ],
-
-    "categorieën": [
-      {
-        "id": 1,
-        "naam": "Cruiser"
-      },
-      {
-        "id": 2,
-        "naam": "Sport"
-      },
-      {
-        "id": 3,
-        "naam": "Street"
-      },
-      {
-        "id": 4,
-        "naam": "Touring"
-      },
-      {
-        "id": 5,
-        "naam": "Off-road"
-      }
+        {
+            "id": 1,
+            "merk": "Harley-Davidson",
+            "land": "Verenigde Staten",
+            "categorie": "Cruiser"
+        },
+        {
+            "id": 2,
+            "merk": "Yamaha",
+            "land": "Japan",
+            "categorie": "Sport"
+        },
+        {
+            "id": 3,
+            "merk": "Honda",
+            "land": "Japan",
+            "categorie": "Street"
+        },
+        {
+            "id": 4,
+            "merk": "BMW",
+            "land": "Duitsland",
+            "categorie": "Touring"
+        },
+        {
+            "id": 5,
+            "merk": "Ducati",
+            "land": "Italië",
+            "categorie": "Sport"
+        },
+        {
+            "id": 6,
+            "merk": "Kawasaki",
+            "land": "Japan",
+            "categorie": "Sport"
+        },
+        {
+            "id": 7,
+            "merk": "Suzuki",
+            "land": "Japan",
+            "categorie": "Street"
+        },
+        {
+            "id": 8,
+            "merk": "KTM",
+            "land": "Oostenrijk",
+            "categorie": "Off-road"
+        },
+        {
+            "id": 9,
+            "merk": "Triumph",
+            "land": "Verenigd Koninkrijk",
+            "categorie": "Cruiser"
+        },
+        {
+            "id": 10,
+            "merk": "Moto Guzzi",
+            "land": "Italië",
+            "categorie": "Touring"
+        }
     ]
-  }
+}
