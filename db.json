@@ -1,0 +1,40 @@
+{
+    "sensors": [
+      {
+        "id": 1,
+        "type": "temperature",
+        "unit": "°C",
+        "model": "DHT22",
+        "location": 1,
+        "accuracy": "±0.5°C"
+      },
+      {
+        "id": 2,
+        "type": "humidity",
+        "unit": "%",
+        "model": "DHT22",
+        "location": 1,
+        "accuracy": "±2%"
+      }
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "name": "Woonkamer",
+        "building": "Hoofdgebouw",
+        "floor": 1,
+        "coordinates": {
+          "lat": 52.370216,
+          "lng": 4.895168
+        }
+      }
+    ],
+    "measurements": [
+      {
+        "id": 1,
+        "sensor_id": 1,
+        "value": 21.5,
+        "timestamp": "2025-03-26T10:30:00Z"
+      }
+    ]
+  }
