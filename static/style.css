@@ -1,0 +1,135 @@
+/* Basisstijl voor de body van de pagina */
+body {
+    font-family: sans-serif;
+    font-size: large;
+    padding: 10%;
+    padding-top: 0%;
+    background-color: #464646;
+    margin-bottom: 200px; /* Verhoog de ruimte onderaan de pagina */
+}
+
+/* Styling voor de hoofdtitel */
+h1 {
+    color: #e0e0de;
+    text-align: center;
+}
+
+/* Styling voor de subtitel op de detailpagina */
+h2 {
+    color: #e0e0de;
+    text-align: center;
+}
+
+/* Stijl voor de links */
+a {
+    text-decoration: none;   /* Verwijder de standaard onderlijning van de links */
+    color: #007bff;
+}
+
+/* Hover-effect voor de links */
+a:hover {
+    text-decoration: underline; /* Voeg onderlijning toe als de gebruiker met de muis over de link gaat */
+}
+
+/* Styling voor de lijst met motorfietsen */
+#motorfietsen-lijst ul {
+    font-size: xx-large;
+    font-weight: bold;
+    list-style: none;              /* Verwijder de standaard lijstbolletjes */
+    padding: 0;                    /* Verwijder de standaard lijstpadding */
+    margin-top: 20px;              /* Voeg ruimte boven de grid toe */
+    display: grid;                 /* Maak gebruik van CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Maak 3 kolommen, elk krijgt een gelijke breedte */
+    gap: 15%;                       /* Voeg ruimte toe tussen de cellen van de grid */
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+/* Stijl voor elk lijstitem in de motorfietsenlijst */
+#motorfietsen-lijst li {
+    height: 125px;               /* Stel een vaste hoogte in voor de lijstitems */
+    border: 1px solid #c9c7ac;
+    padding: 20px;               /* Voeg ruimte binnen elke cel toe */
+    text-align: center;          /* Centreer de tekst in elke cel */
+    border-radius: 15px;         /* Maak de hoeken van de cellen afgerond */
+    display: flex;               /* Gebruik flexbox voor de uitlijning binnen de cel */
+    justify-content: center;     /* Centreer de inhoud horizontaal */
+    align-items: center;         /* Centreer de inhoud verticaal */
+    min-height: 60px;            /* Zorg voor een minimale hoogte voor de consistentie */
+    background-size: cover;      /* Zorg ervoor dat de afbeelding de volledige achtergrond vult */
+    background-position: center; /* Zet de afbeelding in het midden */
+    background-repeat: no-repeat;/* Zorg ervoor dat de afbeelding niet herhaalt */
+    position: relative;          /* Zorg ervoor dat de tekst boven de afbeelding ligt */
+}
+
+/* Achtergrondafbeelding op basis van merknaam */
+#motorfietsen-lijst li.yamaha {
+    background-image: url('/static/images/motorfietsen/yamaha.png');
+}
+
+#motorfietsen-lijst li.honda {
+    background-image: url('/static/images/motorfietsen/honda.png');
+}
+
+#motorfietsen-lijst li.suzuki {
+    background-image: url('/static/images/motorfietsen/suzuki.png');
+}
+
+#motorfietsen-lijst li.kawasaki {
+    background-image: url('/static/images/motorfietsen/kawasaki.png');
+}
+
+/* Styling voor de link binnen een lijstitem */
+#motorfietsen-lijst li a {
+    font-weight: bold;            /* Maak de tekst vetgedrukt */
+    color: #d8d8d8;
+    text-shadow: #000000 3px 3px 2px; /* Voeg een schaduw toe aan de tekst */
+    display: block;               /* Zorg ervoor dat de link de hele cel vult (makkelijker klikken) */
+    width: 75%;                   /* Laat de link 75% van de breedte van de flex container innemen */
+    z-index: 2;                   /* Zorg ervoor dat de tekst boven de afbeelding komt */
+}
+
+/* Styling voor de link bij hover */
+#motorfietsen-lijst li a:hover {
+    color: #ffffff;               /* Zet de kleur op blauw bij hover */
+    text-decoration: none;        /* Verwijder de onderlijning bij hover */
+}
+
+/* Styling voor de 'terug-link' onderaan de details */
+.back-link {
+    display: block;               /* Zorg ervoor dat de link als een blok wordt weergegeven */
+    margin-top: 20px;             /* Voeg wat ruimte bovenaan de link toe */
+    font-weight: bold;            /* Maak de tekst vetgedrukt */
+    font-size: larger;            /* Vergroot de lettergrootte */
+    margin-left: 15%;             /* Voeg marge aan de linkerkant toe */
+}
+
+/* Styling voor de grotere afbeelding in de details-sectie */
+.motorfiets-image {
+    width: 760px; /* Stel de breedte in van de afbeelding in de details */
+    height: 450px; /* Zorg ervoor dat de hoogte proportioneel is aan de breedte */
+    display: block; /* Zorg ervoor dat de afbeelding als een blok wordt weergegeven */
+    margin: 20px auto; /* Centreer de afbeelding en voeg ruimte boven en onder toe */
+    border-radius: 15px; /* Maak de hoeken van de afbeelding afgerond */
+    border-color: #b3b3b3; /* Voeg een lichte randkleur toe aan de afbeelding */
+    border-style: solid; /* Voeg een randstijl toe aan de afbeelding */
+}
+
+/* Stijl voor foutmeldingen */
+.error-message {
+    color: red;                /* Zet de tekstkleur op rood voor foutmeldingen */
+    font-weight: bold;         /* Maak de tekst vetgedrukt */
+}
+
+/* Styling voor de details van de motorfiets */
+.details-container {
+    text-align: center;          /* Centreer de tekst */
+    font-size: large;            /* Stel het lettertype in als 'large' */
+    border: 1px solid #ccc;      /* Voeg een grijze rand toe rondom het details-gedeelte */
+    border-radius: 15px;         /* Maak de hoeken van het blok afgerond */
+    padding: 15px;               /* Voeg wat ruimte binnen het blok toe */
+    margin-top: 25px;            /* Voeg wat ruimte bovenaan het blok toe */
+    margin-left: 15%;            /* Voeg marge aan de linkerkant toe */
+    margin-right: 15%;           /* Voeg marge aan de rechterkant toe */
+    background-color: #e6e6e6;  /* Stel een lichte achtergrondkleur in */
+}

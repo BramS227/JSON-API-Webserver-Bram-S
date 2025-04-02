@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>
+        {% if selected_motorfiets %}
+            Details: {{ selected_motorfiets.get('merk', 'Motorfiets') }}
+        {% else %}
+            Motorfietsen Lijst
+        {% endif %}
+    </title>
+</head>
+<body>
+
+    <h1>Motorfiets Informatie</h1>
+
+    <!-- Dit gedeelte toont een foutmelding als er een fout is -->
+    {% if error %}
+        <p class="error-message">{{ error }}</p> <!-- Toon de foutmelding -->
+        <p><a href="{{ url_for('index') }}">Terug naar de lijst</a></p> <!-- Link om terug te gaan naar de lijst -->
+
+    <!-- Dit gedeelte wordt uitgevoerd als er een motorfiets is geselecteerd -->
+    {% elif selected_motorfiets %}
+        <h2>Details voor {{ selected_motorfiets.get('merk', 'N/A') }}</h2>
+        <div class="details-container">
+            <!-- Toon de afbeelding van de motorfiets -->
+            <img src="{{ url_for('static', filename=selected_motorfiets.get('merk') + '.png') }}" alt="{{ selected_motorfiets.get('merk') }}" class="motorfiets-image">
+            <p><strong>Merk:</strong> {{ selected_motorfiets.get('merk', 'N/A') }}</p> <!-- Toon merk van motorfiets -->
+            <p><strong>Land:</strong> {{ selected_motorfiets.get('land', 'N/A') }}</p> <!-- Toon land van herkomst -->
+            <p><strong>Categorie:</strong> {{ selected_motorfiets.get('categorie', 'N/A') }}</p> <!-- Toon categorie -->
+            <p><strong>Brandstoffen:</strong> {{ selected_motorfiets.get('brandstoffen_tekst', 'Informatie niet beschikbaar.') }}</p> <!-- Toon brandstofinformatie -->
+        </div>
+        <!-- Link om terug te gaan naar de lijst van motorfietsen -->
+        <a href="{{ url_for('index') }}" class="back-link">Terug naar de lijst</a>
+
+    <!-- Dit gedeelte wordt uitgevoerd als er een lijst van motorfietsen beschikbaar is -->
+    {% elif motorfietsen %}
+        <h2>Kies een merk</h2>
+        <div id="motorfietsen-lijst">
+            <ul>
+                {% for motorfiets in motorfietsen %}
+                    <li style="background-image: url('{{ url_for('static', filename=motorfiets['merk'].lower() + '.png') }}');">
+                        <!-- Elke motorfiets heeft een link die de details toont -->
+                        <a href="{{ url_for('motorfiets_details', motorfiets_id=motorfiets['id']) }}">
+                            {{ motorfiets['merk'] }}
+                        </a>
+                    </li>
+                {% else %}
+                    <!-- Als er geen motorfietsen zijn, toon dan dit bericht -->
+                    <li>Geen motorfietsen gevonden.</li>
+                {% endfor %}
+            </ul>
+            
+        </div>
+    {% else %}
+         <!-- Als er geen motorfietsen of fouten zijn, toon dan dit standaard bericht -->
+         <p>Geen informatie beschikbaar.</p>
+    {% endif %}
+
+</body>
+</html>
